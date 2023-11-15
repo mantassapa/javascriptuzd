@@ -102,12 +102,12 @@ else{
 
 //devinta uzduotis
 
-// const sk = parseInt(prompt('iveskite skaiciu'))
-// if (sk>50){
-//     console.log(`ivestas skaicius yra ${sk}`)}
-// else if (sk<50){
-//     console.log(`ivestas kaicius ${sk} mazesnis uz 50`)}
-// else{console.log(`ivestas skaicius ${sk} yra lygus 50`)}
+const sk = parseInt(prompt('iveskite skaiciu'))
+if (sk>50){
+    console.log(`ivestas skaicius yra ${sk}`)}
+else if (sk<50){
+    console.log(`ivestas kaicius ${sk} mazesnis uz 50`)}
+else{console.log(`ivestas skaicius ${sk} yra lygus 50`)}
 
 //desimta uzduotis
 sk1 = parseInt(prompt('iveskite pirma skaiciu'))
