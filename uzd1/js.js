@@ -9,7 +9,7 @@ else if (p==10)console.log('Super!')
 else{console.log('pateikta netinkama reiksme')}
 
 //antra uzduotis
-men = 'kovas'
+let men = 'kovas'
 switch(men.toLowerCase()){
     case 'gruodis':
     case 'sausis':
@@ -32,9 +32,9 @@ switch(men.toLowerCase()){
 
 let h =19
 
-if (11>=h && h>=6){console.log('Labas rytas');}
-else if (18>=h&&h>=12)console.log('laba diena')
-else if (21>=h&&h>=19)console.log('Labas vakaras')
+if (12>h && h>=6){console.log('Labas rytas');}
+else if (19>h&&h>=12)console.log('laba diena')
+else if (22>h&&h>=19)console.log('Labas vakaras')
 else if (24>=h&&h>=22)console.log('Labanakt')
 else if (5>=h&&h>=0)console.log('Labanakt')
 else{console.log('pateikta netinkama reiksme')}
@@ -43,7 +43,31 @@ else{console.log('pateikta netinkama reiksme')}
 const date = new Date()
 const day = date.getDay()
 console.log(date)
-console.log(day)
+switch (day){
+    case 1:
+        console.log('pirmadienis');
+        break;
+    case 2:
+        console.log('antradienis');
+        break;
+    case 3:
+        console.log('treciadienis');
+        break;
+    case 4:
+        console.log('ketvirtadienis');
+        break;
+    case 5:
+        console.log('penktadienis');
+        break;
+    case 6:
+        console.log('sestadienis');
+        break;
+    case 7:
+        console.log('sekmadienis');
+        break;
+    default:
+        console.log('bandyk dar karta')
+}
 
 //penkta uzduotis
 
