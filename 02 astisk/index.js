@@ -11,9 +11,7 @@ function greeting(vardas){
 
 //2. uzduotis------------------
 
-function didesnisSk(){
-    let sk1 = parseInt(prompt('iveskite pirma skaiciu')) 
-    let sk2 = parseInt(prompt('iveskite antra skaiciu'))
+function didesnisSk(sk1=5,sk2=5){
     if (sk1>sk2){
         alert('Pirmas skaicius didesnin')
         return sk1}
@@ -22,7 +20,7 @@ function didesnisSk(){
         return sk2}
     else{
         alert('skaiciai lygus')
-        return sk1}
+        return sk1+sk2}
 }
 // didesnisSk()
 
@@ -40,15 +38,14 @@ function fizzAndBuzz(zodis){
 
 //4. uzduotis---------------
 
-let TrikampioLinija = (sk2,sk3) => {
-    let sk1 = didesnisSk()
+let TrikampioLinija = (sk1,sk2,sk3) => {
     if (sk1 + sk2 > sk3 && Math.abs(sk1 - sk2) < sk3){
         console.log('galimas trikampis')}
     else{
         console.log('trikampis negalimas')
     }
 }
-// TrikampioLinija(5,6)
+TrikampioLinija(didesnisSk(),5,6)
 
 //5. uzduotis----------------
 
@@ -66,14 +63,17 @@ function figura(){
         let k1 = parseInt(prompt('iveskite pirma skaiciu'))
         let k2 = parseInt(prompt('iveskite antra skaiciu'))
         let suma = kvadratas(k1,k2)
-        console.log(`kvadrato plotas ${suma}`)}
+        console.log(`kvadrato plotas ${suma}`)
+        return suma}
     else if (zodis == 'staciakampis'){
         let s1 = parseInt(prompt('iveskite pirma skaiciu'))
         let s2 = parseInt(prompt('iveskite antra skaiciu'))
         let suma = staciakampis(s1,s2)
-        console.log(`staciakampio plotas ${suma}`)}
+        console.log(`staciakampio plotas ${suma}`)
+        return suma}
     else{
-        console.log('iveskite kvadratas arba staciakampis')}
+        console.log('iveskite kvadratas arba staciakampis')
+        return suma}
 }
 // figura()
 
@@ -84,7 +84,7 @@ function inSeven(x){return x=='7' ? true:false;}
 
 //7. uzduotis ------------------
 
-function isEqual(z,y){return Math.round(z), Math.round(y) ? true:false;}
+function isEqual(z,y){return z===y ? true:false;}
 // console.log(isEqual(7,7))
 
 //8.uzduotis---------------------
