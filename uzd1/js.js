@@ -65,8 +65,6 @@ switch (day){
     case 7:
         console.log('sekmadienis');
         break;
-    default:
-        console.log('bandyk dar karta')
 }
 
 //penkta uzduotis
